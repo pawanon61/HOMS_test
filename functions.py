@@ -1,5 +1,4 @@
 import datetime
-from multiprocessing import Process
 import logging
 
 # create  logger
@@ -103,14 +102,4 @@ def request_change_verify_axis(object_method, initial_position, initial_move_to,
 	object_method.mv(initial_position)
 
 
-def w_timeout(function, how_long):
-	# create a process
-	action_process = Process(target = function)
 
-	# start a process and block for some time in seconds
-	action_process.start()
-	action_process.join(timeout = how_long)
-
-	# terminate the process
-	action_process.terminate()
-	logger.warning("Hey! Timeout! Moving on!!")
