@@ -51,6 +51,7 @@ def gantry_checks(object_method, how_much, original_position, timeout_seconds):
 			# move in reverse direction
 			logger.info("moving to original position...")
 			object_method.move(original_position, timeout = timeout_seconds)
+			logger.info("done")
 		except TimeoutError:
 			logger.error('TimeoutError while moving to original position')
 
@@ -70,7 +71,6 @@ def rec_time_for_a_move(object, how_much, timeout_seconds):
 	try:
 		object.pitch.umvr(how_much, timeout = timeout_seconds)
 		final_timestamp = object.pitch.readback.timestamp
-		logger.info()
 		logger.info("it is: %f seconds" %(final_timestamp - initial_timestamp))
 	except TimeoutError:
 		logger.error("TimeoutError")
@@ -96,7 +96,7 @@ def low_high_limit(object_method, timeout_seconds):
 		try:
 			logger.info('going to high limit...')
 			while 1:
-				if object_method.moving == 0:
+				if object_method.done.value == 1:
 					break
 			object_method.mv(1100, timeout = timeout_seconds) # wait = False by default
 			while 1:
@@ -110,12 +110,13 @@ def low_high_limit(object_method, timeout_seconds):
 			object_method.stop()
 		finally:
 			while 1:
-				if object_method.moving == 0:
+				if object_method.done.value == 1:
 					break
 	return low_limit, high_limit
 
 def request_changeRequest(object_method, initial_position, initial_move_to, move_here_after_change_request, timeout_seconds):
 	try:
+		logger.info("requesting a move")
 		object_method.mv(initial_move_to, timeout = timeout_seconds)
 		while 1:
 			# print("current position is %.9f" %object_method.position)
