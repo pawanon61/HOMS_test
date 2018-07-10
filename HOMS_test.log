@@ -97,3 +97,223 @@ Traceback (most recent call last):
   File "/reg/g/pcds/pyps/conda/py36/envs/pcds-1.2.0/lib/python3.6/site-packages/epics/ca.py", line 468, in PySEVCHK
     raise CASeverityException(func_name, message(status))
 epics.ca.CASeverityException:  put returned 'Write access denied'
+2018-07-09 10:16:14,402 - __main__ - INFO - 
+Test initiated at: 2018-07-09 10:16
+
+2018-07-09 10:21:27,075 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 10:21:48,301 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 10:21:48,312 - functions - INFO - yGantry status: coupled
+2018-07-09 10:21:48,314 - functions - INFO -  ygantry status: coupled
+2018-07-09 10:23:16,610 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 10:23:16,613 - functions - INFO - yGantry status: coupled
+2018-07-09 10:23:16,615 - functions - INFO -  ygantry status: coupled
+2018-07-09 10:23:20,874 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 10:23:20,882 - functions - INFO - xgantry difference: -0.0005
+2018-07-09 10:23:20,892 - functions - INFO - ygantry_difference: -0.0005
+2018-07-09 10:25:28,516 - functions - INFO - movement check....
+2018-07-09 10:25:28,517 - functions - INFO - moving by 0.500000...
+2018-07-09 10:29:19,806 - __main__ - INFO - 
+Test initiated at: 2018-07-09 10:29
+
+2018-07-09 10:29:23,815 - __main__ - INFO - 
+Test initiated at: 2018-07-09 10:29
+
+2018-07-09 10:29:39,786 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 10:29:53,345 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 10:29:53,351 - functions - INFO - xGantry status: coupled
+2018-07-09 10:29:53,354 - functions - INFO -  ygantry status: coupled
+2018-07-09 10:30:10,156 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 10:30:10,159 - functions - INFO - xgantry difference: -0.0005
+2018-07-09 10:30:10,162 - functions - INFO - ygantry_difference: -0.0002
+2018-07-09 10:30:23,486 - functions - INFO - movement check....
+2018-07-09 10:30:23,488 - functions - INFO - moving by 0.500000...
+2018-07-09 10:30:33,623 - functions - INFO - final gantry value for this axis: -3.5013. Final gantry difference: -0.0009. Time taken for move to complete: 10.1479
+2018-07-09 10:30:33,624 - functions - INFO - moving to original position...
+2018-07-09 10:32:30,939 - functions - INFO - movement check....
+2018-07-09 10:32:30,942 - functions - INFO - moving by 0.500000...
+2018-07-09 10:32:41,086 - functions - INFO - final gantry value for this axis: -2.4997. Final gantry difference: -0.0000. Time taken for move to complete: 10.1999
+2018-07-09 10:32:41,089 - functions - INFO - moving to original position...
+2018-07-09 10:35:35,494 - functions - INFO - recording 10 second pitch average value for xrt_m1 ...
+2018-07-09 10:35:45,507 - functions - INFO - xrt_m1: 10 second average noise level in mirror angle is -59.9888 urad
+2018-07-09 10:37:48,478 - functions - INFO - for mirror xrt_m1, recording time for 20.000000 urad move ... 
+2018-07-09 10:42:48,477 - __main__ - ERROR - Ah! Timeout error! Moving on
+2018-07-09 10:48:43,749 - functions - INFO - for mirror xrt_m1, recording time for 100.000000 urad move ... 
+2018-07-09 10:53:43,748 - __main__ - ERROR - Ah! Timeout error! Moving on
+2018-07-09 10:57:58,938 - __main__ - INFO - 	1531159078.9134 recording original position...
+
+2018-07-09 10:57:58,942 - __main__ - INFO - initial mirror angle is -53.3637 urad
+2018-07-09 10:57:58,944 - __main__ - INFO - initial xgantry value is -4.0011 mm
+2018-07-09 10:57:58,946 - __main__ - INFO - initial ygantry value is -2.9997 mm
+2018-07-09 10:58:15,059 - functions - INFO - initial move...
+2018-07-09 10:59:02,074 - functions - INFO - stopped at 0.4051
+2018-07-09 10:59:02,075 - functions - INFO - issuing new move...
+2018-07-09 10:59:05,147 - functions - INFO - final position is 0.4985
+2018-07-09 10:59:05,149 - functions - WARNING - final position doesnot match to changed target. failed: couldnot overwrite the command
+2018-07-09 10:59:05,150 - functions - INFO - going to high limit...
+2018-07-09 10:59:07,762 - functions - WARNING - you hit high limit switch at 0.5596879720687866
+2018-07-09 10:59:07,764 - functions - INFO - going to low limit...
+2018-07-09 11:01:01,923 - functions - WARNING - you hit low limit switch at -6.7282891273498535
+2018-07-09 11:01:01,925 - functions - INFO - restoring to original position
+2018-07-09 11:04:15,405 - functions - INFO - initial move...
+2018-07-09 11:04:52,345 - functions - INFO - stopped at 0.4023
+2018-07-09 11:04:52,346 - functions - INFO - issuing new move...
+2018-07-09 11:04:55,513 - functions - INFO - final position is 0.5000
+2018-07-09 11:04:55,514 - functions - WARNING - final position doesnot match to changed target. failed: couldnot overwrite the command
+2018-07-09 11:04:55,516 - functions - INFO - going to high limit...
+2018-07-09 11:07:50,922 - functions - WARNING - you hit high limit switch at 12.180130004882812
+2018-07-09 11:07:50,924 - functions - INFO - going to low limit...
+2018-07-09 11:09:15,405 - __main__ - ERROR - Ah! Timeout error! Moving on
+2018-07-09 11:13:41,806 - functions - INFO - initial move...
+2018-07-09 11:14:14,367 - functions - INFO - stopped at -20.0928
+2018-07-09 11:14:14,368 - functions - INFO - issuing new move...
+2018-07-09 11:17:01,540 - functions - INFO - final position is -30.0105
+2018-07-09 11:17:01,542 - functions - INFO - final position corresponds to changed target. success
+2018-07-09 11:17:01,543 - functions - INFO - going to high limit...
+2018-07-09 11:18:41,806 - __main__ - ERROR - Ah! Timeout error! Moving on
+2018-07-09 14:28:56,259 - __main__ - INFO - 
+Test initiated at: 2018-07-09 14:28
+
+2018-07-09 14:29:10,859 - __main__ - INFO - 	using fee_m1 mirror
+2018-07-09 14:34:12,288 - __main__ - INFO - 
+Test initiated at: 2018-07-09 14:34
+
+2018-07-09 14:34:22,683 - __main__ - INFO - 	using fee_m1 mirror
+2018-07-09 14:36:46,188 - __main__ - INFO - 
+Test initiated at: 2018-07-09 14:36
+
+2018-07-09 14:37:05,475 - __main__ - INFO - 	using fee_m1 mirror
+2018-07-09 14:38:14,671 - __main__ - INFO - 
+Test initiated at: 2018-07-09 14:38
+
+2018-07-09 14:38:19,878 - __main__ - INFO - 	using fee_m1 mirror
+2018-07-09 16:13:18,898 - __main__ - INFO - 
+Test initiated at: 2018-07-09 16:13
+
+2018-07-09 16:13:31,964 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 16:13:40,634 - __main__ - INFO - 	1531178020.5675 recording original position...
+
+2018-07-09 16:13:40,641 - __main__ - INFO - initial mirror angle is -53.3072 urad
+2018-07-09 16:13:40,644 - __main__ - INFO - initial xgantry value is -4.0024 mm
+2018-07-09 16:13:40,646 - __main__ - INFO - initial ygantry value is -3.0000 mm
+2018-07-09 16:13:46,045 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 16:13:46,049 - functions - INFO - xGantry status: coupled
+2018-07-09 16:13:46,051 - functions - INFO -  ygantry status: coupled
+2018-07-09 16:13:48,314 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 16:13:48,317 - functions - INFO - xgantry difference: -0.0014
+2018-07-09 16:13:48,319 - functions - INFO - ygantry_difference: -0.0002
+2018-07-09 16:14:00,244 - functions - INFO - recording 10 second pitch average value ...
+2018-07-09 16:16:04,250 - __main__ - INFO - 
+Test initiated at: 2018-07-09 16:16
+
+2018-07-09 16:16:45,748 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 16:16:50,079 - __main__ - INFO - 	1531178209.9751 recording original position...
+
+2018-07-09 16:16:50,086 - __main__ - INFO - initial mirror angle is -53.2467 urad
+2018-07-09 16:16:50,089 - __main__ - INFO - initial xgantry value is -4.0024 mm
+2018-07-09 16:16:50,092 - __main__ - INFO - initial ygantry value is -3.0000 mm
+2018-07-09 16:17:07,989 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 16:17:07,993 - functions - INFO - xGantry status: coupled
+2018-07-09 16:17:07,995 - functions - INFO -  ygantry status: coupled
+2018-07-09 16:17:10,005 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 16:17:10,008 - functions - INFO - xgantry difference: -0.0014
+2018-07-09 16:17:10,010 - functions - INFO - ygantry_difference: -0.0002
+2018-07-09 16:17:16,068 - functions - INFO - recording 10 second pitch average value ...
+2018-07-09 16:17:26,083 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:17:26,085 - functions - INFO - recording 10 second pitch average value ...
+2018-07-09 16:17:36,099 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:18:47,066 - functions - INFO - recording 10 second pitch average value ...
+2018-07-09 16:18:57,079 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:18:57,081 - functions - INFO - recording 10 second pitch average value ...
+2018-07-09 16:19:07,094 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:19:29,028 - __main__ - INFO - 
+Test initiated at: 2018-07-09 16:19
+
+2018-07-09 16:19:38,479 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 16:19:38,503 - __main__ - INFO - 	1531178378.4901 recording original position...
+
+2018-07-09 16:19:38,509 - __main__ - INFO - initial mirror angle is -53.3852 urad
+2018-07-09 16:19:38,511 - __main__ - INFO - initial xgantry value is -4.0024 mm
+2018-07-09 16:19:38,513 - __main__ - INFO - initial ygantry value is -3.0000 mm
+2018-07-09 16:19:38,525 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 16:19:38,528 - functions - INFO - xGantry status: coupled
+2018-07-09 16:19:38,530 - functions - INFO -  ygantry status: coupled
+2018-07-09 16:19:38,546 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 16:19:38,548 - functions - INFO - xgantry difference: -0.001452
+2018-07-09 16:19:38,550 - functions - INFO - ygantry_difference: -0.000213
+2018-07-09 16:19:38,579 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:19:48,593 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:19:48,595 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:19:58,609 - functions - INFO - 10 second noise level (standard deviation) is 0.0000 mm
+2018-07-09 16:19:58,619 - functions - INFO - movement check....
+2018-07-09 16:19:58,620 - functions - INFO - moving by 0.500000...
+2018-07-09 16:20:08,670 - functions - INFO - final gantry value for this axis: -3.5032. Final gantry difference: -0.0009. Time taken for move to complete: 10.0569
+2018-07-09 16:20:08,671 - functions - INFO - moving to original position...
+2018-07-09 16:20:18,763 - functions - INFO - movement check....
+2018-07-09 16:20:18,765 - functions - INFO - moving by 0.500000...
+2018-07-09 16:20:28,859 - functions - INFO - final gantry value for this axis: -2.4998. Final gantry difference: -0.0000. Time taken for move to complete: 10.1999
+2018-07-09 16:20:28,861 - functions - INFO - moving to original position...
+2018-07-09 16:20:38,958 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:20:48,972 - functions - INFO - 10 second noise level (standard deviation) is 0.0462 urad
+2018-07-09 16:24:17,558 - __main__ - INFO - 
+Test initiated at: 2018-07-09 16:24
+
+2018-07-09 16:24:25,828 - __main__ - INFO - 	using xrt_m1 mirror
+2018-07-09 16:24:25,848 - __main__ - INFO - 	1531178665.7502 recording original position...
+
+2018-07-09 16:24:25,856 - __main__ - INFO - initial mirror angle is -53.3754 urad
+2018-07-09 16:24:25,858 - __main__ - INFO - initial xgantry value is -4.0020 mm
+2018-07-09 16:24:25,860 - __main__ - INFO - initial ygantry value is -3.0000 mm
+2018-07-09 16:24:25,872 - functions - INFO - checking if xrt_m1 axes are coupled
+2018-07-09 16:24:25,875 - functions - INFO - xGantry status: coupled
+2018-07-09 16:24:25,877 - functions - INFO -  ygantry status: coupled
+2018-07-09 16:24:25,905 - functions - INFO - getting gantry differences for mirror xrt_m1
+2018-07-09 16:24:25,908 - functions - INFO - xgantry difference: 0.0004
+2018-07-09 16:24:25,910 - functions - INFO - ygantry_difference: -0.0002
+2018-07-09 16:24:25,938 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:24:35,955 - functions - INFO - 10 second noise level (standard deviation) is 0.000011 mm
+2018-07-09 16:24:35,957 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:24:45,970 - functions - INFO - 10 second noise level (standard deviation) is 0.000011 mm
+2018-07-09 16:24:45,980 - functions - INFO - movement check....
+2018-07-09 16:24:45,982 - functions - INFO - moving by 0.500000...
+2018-07-09 16:24:56,118 - functions - INFO - final gantry value for this axis: -3.5034. Final gantry difference: -0.0015. Time taken for move to complete: 10.1428
+2018-07-09 16:24:56,120 - functions - INFO - moving to original position...
+2018-07-09 16:25:06,210 - functions - INFO - movement check....
+2018-07-09 16:25:06,212 - functions - INFO - moving by 0.500000...
+2018-07-09 16:25:16,308 - functions - INFO - final gantry value for this axis: -2.4999. Final gantry difference: 0.0000. Time taken for move to complete: 10.0120
+2018-07-09 16:25:16,313 - functions - INFO - moving to original position...
+2018-07-09 16:25:26,406 - functions - INFO - recording 10 second average value ...
+2018-07-09 16:25:36,420 - functions - INFO - 10 second noise level (standard deviation) is 0.050317 urad
+2018-07-09 16:25:36,435 - functions - INFO - recording time for 0.020000 urad move ... 
+2018-07-09 16:26:59,267 - functions - INFO - 82.8180341720581
+2018-07-09 16:26:59,269 - functions - INFO - done
+2018-07-09 16:26:59,281 - functions - INFO - recording time for 0.100000 urad move ... 
+2018-07-09 16:29:23,968 - functions - INFO - 144.6930799484253
+2018-07-09 16:29:23,969 - functions - INFO - done
+2018-07-09 16:29:23,983 - functions - INFO - initial move...
+2018-07-09 16:29:29,846 - functions - INFO - stopped at -3.7011
+2018-07-09 16:29:29,849 - functions - INFO - issuing new move...
+2018-07-09 16:29:33,014 - functions - INFO - final position is -3.6027
+2018-07-09 16:29:33,016 - functions - WARNING - final position doesnot match to changed target. failed: couldnot overwrite the command
+2018-07-09 16:29:33,018 - functions - INFO - going to high limit...
+2018-07-09 16:30:37,567 - functions - WARNING - you hit high limit switch at 0.5620290040969849
+2018-07-09 16:30:37,569 - functions - INFO - going to low limit...
+2018-07-09 16:32:34,320 - functions - WARNING - you hit low limit switch at -6.734438896179199
+2018-07-09 16:32:34,322 - functions - INFO - restoring to original position
+2018-07-09 16:32:34,338 - functions - INFO - initial move...
+2018-07-09 16:32:40,234 - functions - INFO - stopped at -2.6968
+2018-07-09 16:32:40,236 - functions - INFO - issuing new move...
+2018-07-09 16:32:43,411 - functions - INFO - final position is -2.5998
+2018-07-09 16:32:43,412 - functions - WARNING - final position doesnot match to changed target. failed: couldnot overwrite the command
+2018-07-09 16:32:43,414 - functions - INFO - going to high limit...
+2018-07-09 16:36:25,152 - functions - WARNING - you hit high limit switch at 12.178862571716309
+2018-07-09 16:36:25,154 - functions - INFO - going to low limit...
+2018-07-09 16:41:25,154 - functions - ERROR - TimeoutError occured during limit test
+2018-07-09 16:41:25,156 - functions - INFO - restoring to original position
+2018-07-09 16:41:25,187 - functions - INFO - initial move...
+2018-07-09 16:41:57,081 - functions - INFO - stopped at -33.2709
+2018-07-09 16:41:57,082 - functions - INFO - issuing new move...
+2018-07-09 16:46:03,037 - functions - INFO - final position is -23.2635
+2018-07-09 16:46:03,039 - functions - INFO - final position corresponds to changed target. success
+2018-07-09 16:46:03,040 - functions - INFO - going to high limit...
+2018-07-09 16:51:03,041 - functions - ERROR - TimeoutError occured during limit test
+2018-07-09 16:51:03,043 - functions - INFO - restoring to original position
